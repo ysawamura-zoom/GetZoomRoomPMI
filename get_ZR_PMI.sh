@@ -20,7 +20,7 @@ input1="./1.log"
 input2="./2.log"
 input3="./3.log"
 
-curl --request GET --url 'https://api.zoom.us/v2/rooms?page_size=30' --header 'authorization: Bearer '$token > $input1
+curl -s --request GET --url 'https://api.zoom.us/v2/rooms?page_size=30' --header 'authorization: Bearer '$token > $input1
 cat $input1 | jq '.rooms' | jq '.[]' | jq '.id' >> $input2
 
 touch 3.sh
