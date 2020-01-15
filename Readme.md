@@ -2,7 +2,8 @@
 
 Shell script to print out PMI number for each ZoomRoom using API.<br>
 This script will require "jq".<br>
-tested on MacOS 10.14.<br>
+Tested on MacOS 10.14.<br>
+<br>
 1. Get the token from Zoom's Marketplace and place it.<br>
 2. Change the permission to 755 and run it<br>
 [EXAMPLE]<br>
